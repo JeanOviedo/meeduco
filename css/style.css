@@ -7,7 +7,6 @@
     box-sizing: border-box;
     outline: none;
     border: none;
-    text-transform: capitalize;
     transition: 0.2s ease-in-out;
     color: #000;
     text-decoration: none;
@@ -75,11 +74,11 @@ html{
 
 
 :root{
-    --Soft-Blue: hsl(231, 69%, 60%);
-    --Soft-Red: hsl(0, 94%, 66%);
+    --Soft-Blue: #37BF00;
+    --Soft-Red: #309807;
     --Grayish-Blue: hsl(229, 8%, 60%);
     --Very-Dark-Blue: hsl(229, 31%, 21%);
-    --box-shadow: .5rem .5rem  0 hsl(231, 69%, 60%);
+    --box-shadow: .5rem .5rem  0 #226b05 ;
     --text-shadow: .4rem .4rem  0 rgba(0, 0, 0, .2);
     --border: .2rem  solid var(--green);
 }
@@ -432,3 +431,98 @@ html{
 .faq .accordion-content.active {
     display: block;
 }
+
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .product_list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .product_item {
+    width: calc(50% - 33px);
+    margin-bottom: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .product_image-link {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  .product_image-wrapper {
+    max-width: 100%;
+    height: auto;
+    overflow: hidden;
+  }
+  
+  .product_image-wrapper img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+  }
+  
+
+  
+  .title-wrap {
+    margin-top: 10px;
+  }
+  
+  .title-wrap h3 {
+    margin: 0;
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  .nombre-autor {
+    font-size: 14px;
+    color: #666;
+  }
+  
+  .comision-wrapper {
+    margin-top: 10px;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .comision {
+    margin-right: 5px;
+    color: #666;
+  }
+  
+  .precio {
+    font-weight: bold;
+  }
+  
+  .button-wrapper {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    color: #fff !important;
+    background-color: var(--Soft-Blue);
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn:hover {
+    background-color:var(--Soft-Red);
+  }
+  
+ 
