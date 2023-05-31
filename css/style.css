@@ -482,7 +482,7 @@ html{
     }
     
     .product_item {
-      width: 75%;
+        width: calc(80% - 33px);
       
     }
   }
