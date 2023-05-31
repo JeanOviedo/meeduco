@@ -10,7 +10,15 @@
     transition: 0.2s ease-in-out;
     color: #000;
     text-decoration: none;
-    overflow-x: hidden
+   
+}
+
+@media (max-width: 891px){
+    *{
+        overflow-x: hidden
+       
+    }
+    
 }
 
 ::selection{
@@ -151,6 +159,7 @@ html{
 @media (max-width: 991px){
     html{
         font-size: 55%;
+       
     }
     .header{
         padding: 2rem;
