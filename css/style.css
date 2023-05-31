@@ -463,14 +463,29 @@ html{
     max-width: 100%;
     height: auto;
     overflow: hidden;
+    background-color: #e5e7e4;
+    border-radius: 6px;
+    padding: 19px;
   }
   
   .product_image-wrapper img {
-    width: 100%;
-    height: auto;
+    width: 500px;
+    height: 300px;
     object-fit: contain;
   }
   
+
+  @media (max-width: 767px) {
+    .product_list {
+      flex-wrap: nowrap;
+      flex-direction: column;
+    }
+    
+    .product_item {
+      width: 75%;
+      
+    }
+  }
 
   
   .title-wrap {
