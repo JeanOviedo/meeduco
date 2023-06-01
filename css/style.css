@@ -120,6 +120,7 @@ html{
 }
 
 
+
 .header .logo{
     cursor: pointer;
 }
@@ -161,8 +162,12 @@ html{
     display: none;
 }
 
-
-
+.countdown {
+    padding:1rem;
+    color: var(--Soft-Red);
+    font-size: 16px;
+    text-align: center;
+}
 /* Media Queries */
 
 
@@ -196,6 +201,10 @@ html{
         transform: scale(0);
         transform-origin: top right;
     }
+    .logo-img{
+        height: 70% !important;
+    }
+    
 
     .header .navbar.active{
         transform: scale(1);
