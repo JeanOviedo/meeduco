@@ -22,7 +22,6 @@ document.addEventListener("DOMContentLoaded", function() {
             var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
             countdownElement.innerHTML = "Con descuento en " + hours.toString().padStart(2, '0') + ":" + minutes.toString().padStart(2, '0') + ":" + seconds.toString().padStart(2, '0') + "  ¡Aprovecha OFERTA EXCLUSIVA!";
-            console.log(hours.toString().padStart(2, '0') + ":" + minutes.toString().padStart(2, '0') + ":" + seconds.toString().padStart(2, '0'));
 
             setTimeout(updateCountdown, 1000);
         }
