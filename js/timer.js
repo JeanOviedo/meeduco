@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", function() {
         var distance = endTime - now;
 
         if (distance <= 0) {
-            countdownElement.innerHTML = "00:00 Oferta terminada pero puede continuar registro";
+            countdownElement.innerHTML = "";
             countdownElement.style.color = "gray";
             console.log("La oferta ha terminado");
             localStorage.removeItem("endTime");

@@ -110,31 +110,14 @@
      <!--youtube  -->
      <div class="video-wrapper">
         <div class="video-container">
-            <div id="player"></div>
+            <div id="player">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/HmAIatbULgs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+            </div>
         </div>
     </div>
 
-    <script>
-        // Código para insertar el video
-        var tag = document.createElement('script');
-        tag.src = 'https://www.youtube.com/iframe_api';
-        var firstScriptTag = document.getElementsByTagName('script')[0];
-        firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
-
-        var player;
-        function onYouTubeIframeAPIReady() {
-            player = new YT.Player('player', {
-                videoId: 'HmAIatbULgs', // Reemplaza 'VIDEO_ID' por el ID de tu video de YouTube
-                playerVars: {
-                    'autoplay': 1, // Reproducir automáticamente el video
-                    'controls': 0, // Ocultar los controles del reproductor
-                    'rel': 0, // No mostrar videos relacionados al finalizar
-                    'showinfo': 0 // No mostrar información del video
-                }
-            });
-        }
-    </script>
-
+    
  <!--youtube  -->
 
 
@@ -470,6 +453,50 @@
 
     <!-- preguntas section ends -->
 
+    
+
+ 
+
+<!-- TESTIMONIOS -->
+<section class="testimonios" id="testimonios">
+    <div class="heading">
+        <h1>Testimonios</h1>
+        <p>Aquí encontrarás algunos testimonios de personas que tomaron el curso.</p>
+    </div>
+    <div class="box-container">
+        <div class="box" data-video-id="hxhiGlkNC9g">
+            <div id="player1">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/hxhiGlkNC9g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+            </div>
+        </div>
+
+        <div class="box" data-video-id="oR2SFdfxVIo">
+            <div id="player2">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/oR2SFdfxVIo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+        </div>
+
+        <div class="box" data-video-id="Hsjnf3q2fHg">
+            <div id="player3">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/Hsjnf3q2fHg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+        </div>
+
+        <div class="box" data-video-id="5VDxIF0UFbQ">
+            <div id="player4">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/5VDxIF0UFbQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+        </div>
+
+        
+    </div>
+</section>
+
+
+
+
+ <!-- TESTIMONIOS -->
 
 
 
