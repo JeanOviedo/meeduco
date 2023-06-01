@@ -8,7 +8,7 @@
     outline: none;
     border: none;
     transition: 0.2s ease-in-out;
-    color: #000;
+   
     text-decoration: none;
    
 }
@@ -96,7 +96,7 @@ html{
     --Soft-Blue: #37BF00;
     --Soft-Red: #309807;
     --Grayish-Blue: hsl(229, 8%, 60%);
-    --Very-Dark-Blue: hsl(229, 31%, 21%);
+    --Very-Dark-Blue: hsl(0, 1%, 28%);
     --box-shadow: .5rem .5rem  0 #226b05 ;
     --text-shadow: .4rem .4rem  0 rgba(0, 0, 0, .2);
     --border: .2rem  solid var(--green);
@@ -116,6 +116,7 @@ html{
     z-index: 10000;
     background-color: #fff;
     box-shadow: 0rem 0.5rem 1.5rem rgba(0, 0, 0, .1);
+    
 }
 
 
@@ -128,6 +129,7 @@ html{
     margin-left: 2rem;
     font-size: 1.7rem;
     text-transform: uppercase;
+    color: rgb(71, 71, 71);
 }
 
 
@@ -144,7 +146,7 @@ html{
 }
 
 .header .navbar .btn:hover{
-    color: var(--Soft-Red);
+    color: #37BF00 !important;
     background-color: transparent;
     border: 2px solid var(--Soft-Red);
 }
@@ -392,6 +394,7 @@ html{
 
 .footer .box-container .box a:hover i{
     padding-right:1rem;
+   
 }
 
 
@@ -401,7 +404,7 @@ html{
     margin-top: 2rem;
     text-align: center;
     font-size: 2rem;
-    color: #000;
+    color: rgb(71, 71, 71) !important;
     border-top: .1rem solid rgba(0, 0, 0, .1);
 }
 

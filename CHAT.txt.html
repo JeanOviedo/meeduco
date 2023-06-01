@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Send to Whatsapp</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.3/sweetalert.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+              
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Send To Whatsapp <span class="sr-only">(current)</span></a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="jumbotron vertical-center">
+    <div class="container center">
+        <div class="row">
+            <div class="col-xs-12 col-md-6 col-md-offset-6">
+                <h2>Send Message to Whatsapp</h2>
+                <form>
+                    <div class="form-group">
+                        <label for="phone">Phone number</label>
+                        <input type="number" name="phone" id="phone" class="form-control" placeholder="6281515339555">
+                    </div>
+                    <div class="form-group">
+                        <label for="text">Text</label>
+                        <textarea class="form-control" name="text" id="text"></textarea>
+                    </div>
+                    <button type="button" class="btn btn-primary col-xs-12" id="send">Send</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    </div>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.3/sweetalert.min.js"></script>
+<script>
+    $(document).ready(function(){
+        var btnSend = $('#send');
+        btnSend.click(function (){
+            var phone = $('#phone').val();
+            if (!phone) {
+                swal('Please enter a phone number');
+                return;
+            }
+            var text = $('#text').val();
+            if (!text) {
+                swal("Please enter message");
+                return;
+            }
+            var url = 'http://api.whatsapp.com/send?phone='+ phone + '&text=' + text;
+            var win = window.open(url , '_blank');
+            win.focus();
+        });
+    });
+</script>
+</html>

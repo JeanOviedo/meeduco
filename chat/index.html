@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WhatsApp Widget - (c) Fajar Setya Budi</title>
+    <link rel="stylesheet" href="dist/css/whatsapp-widget.min.css">
+ 
+</head>
+<body>
+   
+
+    <!-- what app Toggleable custom form -->
+    <style>
+        .whatsapp-widget {
+            max-width: 480px;
+            display: none;
+        }
+        .whatsapp-widget.expanded {
+            display: block;
+        }
+    </style>
+
+    
+   
+
+    <!-- Built in form -->
+    <form id="general-support" class="wa-widget" action="6289613866111" data-chat="general-support"></form>
+    <!-- End -->
+
+    <script src="dist/js/whatsapp-widget.min.js"></script>
+    <script>
+        var generalSupport = new WhatsAppWidget(document.getElementById('general-support'), {
+            name: 'Ana Guzman',
+            division: 'Soporte General',
+            photo: 'images/user.png',
+            introduction: 'Puede utilizar WhatsApp para comunicarse con nosotros.'
+        }, [
+            {
+                data: 'nombre',
+                type: 'text',
+                required: true
+            }, {
+                data: 'email',
+                type: 'email',
+                required: false
+            }, {
+                data: 'mensaje',
+                type: 'text',
+                required: true
+            }
+        ]);
+        // generalSupport.toggle()
+    </script>
+
+    <!-- what app Toggleable custom form -->
+</body>
+</html>
