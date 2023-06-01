@@ -14,7 +14,17 @@
 }
 
 @media (max-width: 891px){
-    *{
+    .home{
+        overflow-x: hidden
+       
+    }
+
+    .features{
+        overflow-x: hidden
+       
+    }
+
+    .faq{
         overflow-x: hidden
        
     }
@@ -42,7 +52,7 @@ section {
 html{
     font-size: 62.5%;
     scroll-behavior: smooth;
-    overflow-x: hidden;
+   
 }
 
 .heading{
@@ -473,7 +483,7 @@ html{
     max-width: 100%;
     height: auto;
     overflow: hidden;
-    background-color: #f3f6f1;
+    background-color: #f3f6f1c7;
     border-radius: 6px;
     padding: 19px;
   }
@@ -496,6 +506,13 @@ html{
         width: 100%;
       
     }
+
+    .product_image-wrapper img {
+        width: 220px;
+        height: 70%;
+        object-fit: contain;
+        text-align: center;
+      }
   }
 
   
