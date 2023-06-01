@@ -7,11 +7,65 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Curso de Pizza</title>
     <link rel="stylesheet" href="../../css/style.css">
-
+    <link rel="stylesheet" href="./chat/dist/css/whatsapp-widget.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
 
 <body>
+
+<!-- what app Toggleable custom form -->
+<style>
+    .whatsapp-widget {
+        max-width: 480px;
+        display: none;
+    }
+    .whatsapp-widget.expanded {
+        display: block;
+    }
+</style>
+
+
+
+
+<!-- Built in form -->
+<form id="general-support" class="wa-widget" action="573103726105" data-chat="general-support"></form>
+<!-- End -->
+
+<script src="./chat/dist/js/whatsapp-widget.js"></script>
+
+
+<script>
+    var generalSupport = new WhatsAppWidget(document.getElementById('general-support'), {
+        name: 'Ana Guzman',
+        division: 'Soporte General',
+        photo: './chat/images/user.png',
+        introduction: 'Puede utilizar WhatsApp para comunicarse con nosotros.'
+    }, [
+        {
+            data: 'nombre',
+            type: 'text',
+            required: true
+        }, {
+            data: 'email',
+            type: 'email',
+            required: false
+        }, {
+            data: 'mensaje',
+            type: 'text',
+            required: true,
+          
+        }
+    ]);
+  const input = document.querySelector('input[data-message="mensaje"]');
+  input.value = "Estoy interesado en el curso de Pizzeria!!!";
+    // generalSupport.toggle()
+</script>
+
+<!-- what app Toggleable custom form -->
+
+
+
+
     <!-- navbar sections starts  -->
     <header class="header">
         <div class="logo">
