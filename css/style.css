@@ -561,18 +561,22 @@ html{
   }
   
   .product_image-wrapper {
-    max-width: 100%;
-    height: auto;
-    overflow: hidden;
-    background-color: #f3f6f1c7;
-    border-radius: 6px;
-    padding: 19px;
+    display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 100%;
+  height: auto;
+  overflow: hidden;
+  background-color: #f3f6f1c7;
+  border-radius: 6px;
+  padding: 19px;
   }
   
   .product_image-wrapper img {
     width: 500px;
     height: 300px;
     object-fit: contain;
+    text-align: center;
   }
   
 
