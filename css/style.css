@@ -46,12 +46,14 @@
 }
 
 section {
-    padding: 2rem 9%;
+    padding: 0rem 9%;
 }
 
 html{
     font-size: 62.5%;
     scroll-behavior: smooth;
+    --plyr-color-main: #00a62f;
+
    
 }
 
@@ -290,7 +292,7 @@ html{
 /* home section starts  */
 
 .home{
-    padding-top: 15rem;
+    padding-top: 9rem;
     display: flex;
     align-items: center;
     flex-wrap: wrap;
