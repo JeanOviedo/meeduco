@@ -21,7 +21,7 @@ document.addEventListener("DOMContentLoaded", function() {
             var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
             var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-            countdownElement.innerHTML = "Con descuento en " + hours.toString().padStart(2, '0') + ":" + minutes.toString().padStart(2, '0') + ":" + seconds.toString().padStart(2, '0') + "  ¡Aprovecha OFERTA EXCLUSIVA!";
+            countdownElement.innerHTML = "Descuento en " + hours.toString().padStart(2, '0') + ":" + minutes.toString().padStart(2, '0') + ":" + seconds.toString().padStart(2, '0') + "  ¡Aprovecha OFERTA EXCLUSIVA!";
 
             setTimeout(updateCountdown, 1000);
         }
