@@ -4,74 +4,80 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="En Meeduco ofrecemos cursos para ayudarte a emprender y desarrollar tu negocio rápidamente. Aprende nuevas habilidades y obtén consejos prácticos de expertos en emprendimiento.">
-    <meta name="keywords" content="cursos, emprendimiento, ayuda, negocio, capacitación, habilidades">
+    <meta
+      name="description"
+      content="En Meeduco ofrecemos cursos para ayudarte a emprender y desarrollar tu negocio rápidamente. Aprende nuevas habilidades y obtén consejos prácticos de expertos en emprendimiento."
+    />
+    <meta
+      name="keywords"
+      content="cursos, emprendimiento, ayuda, negocio, capacitación, habilidades"
+    />
     <meta name="msvalidate.01" content="BEC55F38122A838FE15147CF4D7F3AFF" />
-     <title>Cursos para emprender y ayudar a montar un negocio | Meeduco</title>
+    <title>Cursos para emprender y ayudar a montar un negocio | Meeduco</title>
 
     <link rel="stylesheet" href="css/style.css" />
 
-    <link
-      rel="stylesheet"
-      href="./css/font/css/all.min.css"
-    />
-    <link rel="stylesheet" href="./chat/dist/css/whatsapp-widget.min.css">
+    <link rel="stylesheet" href="./css/font/css/all.min.css" />
+    <link rel="stylesheet" href="./chat/dist/css/whatsapp-widget.min.css" />
   </head>
 
   <body>
-
-
-   <!-- what app Toggleable custom form -->
-   <style>
-    .whatsapp-widget {
+    <!-- what app Toggleable custom form -->
+    <style>
+      .whatsapp-widget {
         max-width: 480px;
         display: none;
-    }
-    .whatsapp-widget.expanded {
+      }
+      .whatsapp-widget.expanded {
         display: block;
-    }
-</style>
+      }
+    </style>
 
+    <!-- Built in form -->
+    <form
+      id="general-support"
+      class="wa-widget"
+      action="573103726105"
+      data-chat="general-support"
+    ></form>
+    <!-- End -->
 
+    <script src="./chat/dist/js/whatsapp-widget.js"></script>
 
-
-<!-- Built in form -->
-<form id="general-support" class="wa-widget" action="573103726105" data-chat="general-support"></form>
-<!-- End -->
-
-<script src="./chat/dist/js/whatsapp-widget.js"></script>
-
-
-<script>
-    var generalSupport = new WhatsAppWidget(document.getElementById('general-support'), {
-        name: 'Ana Guzman',
-        division: 'Soporte General',
-        photo: './chat/images/user.png',
-        introduction: 'Puede utilizar WhatsApp para comunicarse con nosotros.'
-    }, [
+    <script>
+      var generalSupport = new WhatsAppWidget(
+        document.getElementById("general-support"),
         {
-            data: 'nombre',
-            type: 'text',
-            required: true
-        }, {
-            data: 'email',
-            type: 'email',
-            required: false
-        }, {
-            data: 'mensaje',
-            type: 'text',
+          name: "Ana Guzman",
+          division: "Soporte General",
+          photo: "./chat/images/user.png",
+          introduction:
+            "Puede utilizar WhatsApp para comunicarse con nosotros.",
+        },
+        [
+          {
+            data: "nombre",
+            type: "text",
             required: true,
-          
-        }
-    ]);
-  const input = document.querySelector('input[data-message="mensaje"]');
-  input.value = "Estoy interesado!!!";
-    // generalSupport.toggle()
-</script>
+          },
+          {
+            data: "email",
+            type: "email",
+            required: false,
+          },
+          {
+            data: "mensaje",
+            type: "text",
+            required: true,
+          },
+        ]
+      );
+      const input = document.querySelector('input[data-message="mensaje"]');
+      input.value = "Estoy interesado!!!";
+      // generalSupport.toggle()
+    </script>
 
-<!-- what app Toggleable custom form -->
-
-
+    <!-- what app Toggleable custom form -->
 
     <!-- navbar sections starts  -->
     <header class="header">
@@ -97,8 +103,10 @@
       <div class="content">
         <h1>Cursos Para capacitarte</h1>
         <p>
-            Al aprender con nuestros aliados, tendrás la oportunidad de acceder a contenidos exclusivos, experiencias de aprendizaje enriquecedoras y consejos prácticos de quienes han logrado el éxito en sus respectivas áreas.
-
+          Al aprender con nuestros aliados, tendrás la oportunidad de acceder a
+          contenidos exclusivos, experiencias de aprendizaje enriquecedoras y
+          consejos prácticos de quienes han logrado el éxito en sus respectivas
+          áreas.
         </p>
 
         <a href="#features2" class="home-btn">Ver cursos</a>
@@ -108,7 +116,7 @@
         <img src="images/edu2.svg" alt="illustration-hero" />
       </div>
     </section>
-    <br>
+    <br />
 
     <!-- home section ends -->
 
@@ -118,17 +126,19 @@
       <div class="heading">
         <h1>Beneficios</h1>
         <p>
-            Aprender y emprender van de la mano. Únete a nuestra comunidad de estudiantes y emprendedores para conectarte con personas afines, intercambiar ideas y colaborar en proyectos emocionantes. No pierdas más tiempo, aprovecha esta oportunidad de aprendizaje y emprendimiento con nuestros aliados. Juntos, podemos construir un futuro exitoso. ¡Únete y comienza tu viaje hacia el éxito hoy mismo!
+          Aprender y emprender van de la mano. Únete a nuestra comunidad de
+          estudiantes y emprendedores para conectarte con personas afines,
+          intercambiar ideas y colaborar en proyectos emocionantes. No pierdas
+          más tiempo, aprovecha esta oportunidad de aprendizaje y emprendimiento
+          con nuestros aliados. Juntos, podemos construir un futuro exitoso.
+          ¡Únete y comienza tu viaje hacia el éxito hoy mismo!
         </p>
       </div>
 
       <div class="row">
         <!-- 1 Tab  -->
         <div class="image">
-          <img
-            src="images/edu.svg"
-            alt="illustration-features-tab-1"
-          />
+          <img src="images/edu.svg" alt="illustration-features-tab-1" />
         </div>
 
         <div class="content">
@@ -142,11 +152,16 @@
         <!-- productos -->
 
         <div class="content" id="features2">
-            <h1>Cursos para emprender</h1>
-            <p>
-                Amplía tus conocimientos y adquiere nuevas habilidades con nuestra amplia gama de cursos diseñados para satisfacer tus necesidades de aprendizaje. Ya sea que estés buscando mejorar tus habilidades profesionales, explorar nuevas áreas de interés o simplemente enriquecer tu vida personal, nuestros cursos te brindarán la oportunidad de crecer y desarrollarte.
-            </p>
-          </div>
+          <h1>Cursos para emprender</h1>
+          <p>
+            Amplía tus conocimientos y adquiere nuevas habilidades con nuestra
+            amplia gama de cursos diseñados para satisfacer tus necesidades de
+            aprendizaje. Ya sea que estés buscando mejorar tus habilidades
+            profesionales, explorar nuevas áreas de interés o simplemente
+            enriquecer tu vida personal, nuestros cursos te brindarán la
+            oportunidad de crecer y desarrollarte.
+          </p>
+        </div>
 
         <div class="section-products">
           <div id="productos" class="section _4">
@@ -170,14 +185,12 @@
                     <h3>Curso de Pizzero de Cero a Experto</h3>
                     <div class="nombre-autor">Por Hernan Perez</div>
                   </div>
-                  <!-- <div class="comision-wrapper">
-                    <div class="comision">Comision de hasta</div>
-                  </div> -->
+
                   <div class="button-wrapper">
                     <a
                       href="https://go.hotmart.com/L83365117M?ap=c3f3"
                       target="_blank"
-                      class="btn "
+                      class="btn"
                     >
                       <strong>Comprar | Ver Precio</strong>
                     </a>
@@ -190,37 +203,37 @@
                     </a>
                   </div>
                 </div>
+
+                <!-- BARBERO -->
                 <div class="product_item">
                   <a
-                    href="https://go.hotmart.com/L83365117M?ap=c3f3"
+                    href="https://go.hotmart.com/Q83456112F?ap=95e2"
                     target="_blank"
                     class="product_image-link w-inline-block"
                   >
                     <div class="product_image-wrapper">
                       <img
-                        src="./images/cocina2.svg"
+                        src="./cursos/curso-de-barberia-desde-cero-a-experto/images/Chef.png"
                         alt=""
                         class="producto_image"
                       />
                     </div>
                   </a>
                   <div class="title-wrap">
-                    <h3>Experto en Pizza</h3>
-                    <div class="nombre-autor">Por  Héctor Aristizabal</div>
+                    <h3>Curso de Barberia y monta tu negocio</h3>
+                    <div class="nombre-autor">Por Eliud Araque</div>
                   </div>
-                  <!-- <div class="comision-wrapper">
-                    <div class="comision">Comision de hasta</div>
-                  </div> -->
+
                   <div class="button-wrapper">
                     <a
-                      href="https://go.hotmart.com/L83365117M?ap=c3f3"
+                      href="https://go.hotmart.com/Q83456112F?ap=95e2"
                       target="_blank"
                       class="btn large afiliardo w-button"
                     >
                       <strong>Comprar | Ver Precio</strong>
                     </a>
                     <a
-                      href="./cursos/curso-de-pizzero-desde-cero-a-experto/index.html"
+                      href="./cursos/curso-de-barberia-desde-cero-a-experto/index.html"
                       target="_blank"
                       class="btn large w-button"
                     >
@@ -229,13 +242,14 @@
                   </div>
                 </div>
 
+                <!-- BARBERO -->
+
                 <!-- Agrega más elementos aquí -->
               </div>
             </div>
           </div>
         </div>
 
-        
         <!-- 3 Tab  -->
       </div>
     </section>
@@ -267,12 +281,14 @@
         </div>
 
         <div class="accordion-item">
-          <h3 class="accordion-title">Quiero inscribirme en un curso ¿Cómo Funciona?</h3>
+          <h3 class="accordion-title">
+            Quiero inscribirme en un curso ¿Cómo Funciona?
+          </h3>
           <div class="accordion-content">
             <p>
               Una vez realices el pago, el sistema automáticamente te enviará
               las instrucciones a tu correo electrónico para acceder a la
-              plataforma donde podrás iniciar tu capacitación inmediatamente. 
+              plataforma donde podrás iniciar tu capacitación inmediatamente.
             </p>
           </div>
         </div>
@@ -288,7 +304,6 @@
               ellos, además un curso presencial te podría costar alrededor de
               150 a 200 dólares mensuales.
             </p>
-         
           </div>
         </div>
 
@@ -300,8 +315,8 @@
             <p>
               Puedes empezar a ver resultados desde la primera semana
               dependiendo de tu nivel de compromiso y práctica con lo aprendido.
-             Manejamos una metodología de enseñanza la cual resulta
-              muy dinámica y efectiva.
+              Manejamos una metodología de enseñanza la cual resulta muy
+              dinámica y efectiva.
             </p>
           </div>
         </div>
@@ -331,7 +346,7 @@
 
         <div class="accordion-item">
           <h3 class="accordion-title">
-             ¿Qué es todo lo que obtengocon los cursos?
+            ¿Qué es todo lo que obtengocon los cursos?
           </h3>
           <div class="accordion-content">
             <ul>
@@ -345,7 +360,7 @@
                 Acceso para siempre al sistema de preguntas y respuestas tipo
                 foro.
               </li>
-             
+
               <li>
                 Certificado VIP al finalizar el curso, imprimible y descargable.
               </li>
@@ -400,7 +415,6 @@
           <h3>Enlaces rápidos</h3>
           <a href="#"> <i class="fas fa-chevron-right"></i>Inicio</a>
           <a href="#faq"> <i class="fas fa-chevron-right"></i>Preguntas</a>
-      
         </div>
 
         <div class="box">
@@ -409,37 +423,41 @@
             <i class="fas fa-chevron-right"></i>Cursos para emprender</a
           >
           <a href="../blog"> <i class="fas fa-chevron-right"></i>Blog</a>
-         
-         
         </div>
 
         <div class="box">
           <h3>Contacto</h3>
           <a href="#"> <i class="fas fa-phone"></i>+57 3103726105</a>
-<!--          
+          <!--          
           <a href="#"> <i class="fas fa-envelope"></i>empresa@example.com</a> -->
-        
+
           <a href="#">
-            <i class="fas fa-map-marker-alt"></i>Colombia, Montería </a
-          >
+            <i class="fas fa-map-marker-alt"></i>Colombia, Montería
+          </a>
         </div>
 
         <div class="box">
           <h3>Síguenos</h3>
-          <a href="http://fb.com/meeduco1"> <i class="fab fa-facebook-f"></i>Facebook</a>
+          <a href="http://fb.com/meeduco1">
+            <i class="fab fa-facebook-f"></i>Facebook</a
+          >
           <a href="#"> <i class="fab fa-twitter" target="_blank"></i>Twitter</a>
-          <a href="http://instagram.com/me_educo" target="_blank"> <i class="fab fa-instagram"></i>Instagram</a>
-          <a href="http://TikTok.com/meeduco" target="_blank"> <i class="fab fa-tiktok"></i>TikTok</a>
-          <a href="http://www.pinterest.com/me_educo" target="_blank"> <i class="fab fa-pinterest"></i>Pinterest</a>
+          <a href="http://instagram.com/me_educo" target="_blank">
+            <i class="fab fa-instagram"></i>Instagram</a
+          >
+          <a href="http://TikTok.com/meeduco" target="_blank">
+            <i class="fab fa-tiktok"></i>TikTok</a
+          >
+          <a href="http://www.pinterest.com/me_educo" target="_blank">
+            <i class="fab fa-pinterest"></i>Pinterest</a
+          >
         </div>
       </div>
 
       <div class="credit">
         Creado por
-        <a href="#" target="_blank">
-          <span>Meeduco.com</span></a
-          >
-          | Todos los derechos reservados
+        <a href="#" target="_blank"> <span>Meeduco.com</span></a>
+        | Todos los derechos reservados
       </div>
     </section>
 
