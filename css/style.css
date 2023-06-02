@@ -152,7 +152,15 @@ html{
     }
 }
 
-
+@media (max-width: 768px) {
+    .box-container {
+      flex-direction: column;
+    }
+  
+    .box {
+      margin-bottom: 2rem;
+    }
+  }
 
 /* footer section starts */
 .testimonios .box-container-testimonio {
@@ -301,7 +309,7 @@ html{
 /* home section starts  */
 
 .home{
-    padding-top: 11rem;
+    padding-top: 8rem;
     display: flex;
     align-items: center;
     flex-wrap: wrap;
@@ -592,7 +600,13 @@ html{
     
     .product_item {
         width: 100%;
+
+        
       
+    }
+
+    .home {
+        padding-top: 21rem !important;
     }
 
     .product_image-wrapper img {
