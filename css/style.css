@@ -72,7 +72,7 @@ html{
 
 
 .heading p{
-    max-width: 60rem;
+    max-width: 90rem;
     margin: auto;
     color: var(--Grayish-Blue);
     font-size: 1.7rem;
@@ -150,6 +150,11 @@ html{
         width: 90%; /* Ajusta el ancho del contenedor según tus necesidades */
         max-width: none; /* Elimina el ancho máximo establecido en dispositivos móviles */
     }
+    .video-wrapper {
+        
+        height: 46vh;
+    }
+    
 }
 
 @media (max-width: 768px) {
