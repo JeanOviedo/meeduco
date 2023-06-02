@@ -121,9 +121,6 @@ html{
 
 
 
-
-
-
 .video-wrapper {
     display: flex;
     justify-content: center;
@@ -134,23 +131,17 @@ html{
 
 .video-container {
     position: relative;
-    width: 80%;
-    height: 65%;
+    width: 60%; /* Ajusta el ancho del contenedor según tus necesidades */
+    height: auto;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-    
-            overflow: hidden;
-   
-    
+    overflow: hidden;
 }
 
-.video-container iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
+#player {
     width: 100%;
     height: 100%;
+    object-fit: contain;
 }
-
 
 /* footer section starts */
 .testimonios .box-container-testimonio {
@@ -579,6 +570,7 @@ html{
     text-align: center;
   }
   
+
 
   @media (max-width: 767px) {
     
