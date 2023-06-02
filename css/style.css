@@ -145,6 +145,15 @@ html{
     object-fit: contain;
 }
 
+@media only screen and (max-width: 600px) {
+    .video-container {
+        width: 90%; /* Ajusta el ancho del contenedor según tus necesidades */
+        max-width: none; /* Elimina el ancho máximo establecido en dispositivos móviles */
+    }
+}
+
+
+
 /* footer section starts */
 .testimonios .box-container-testimonio {
     display: grid;
@@ -292,7 +301,7 @@ html{
 /* home section starts  */
 
 .home{
-    padding-top: 9rem;
+    padding-top: 11rem;
     display: flex;
     align-items: center;
     flex-wrap: wrap;
