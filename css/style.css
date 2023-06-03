@@ -97,7 +97,7 @@ html{
 :root{
     --Soft-Blue: #37BF00;
     --Soft-Red: #309807;
-    --Grayish-Blue: hsl(229, 8%, 60%);
+    --Grayish-Blue: hsl(210, 1%, 30%);
     --Very-Dark-Blue: hsl(0, 1%, 28%);
     --box-shadow: .5rem .5rem  0 #226b05 ;
     --text-shadow: .4rem .4rem  0 rgba(0, 0, 0, .2);
@@ -121,7 +121,95 @@ html{
     
 }
 
+body {
+  padding: 30px 0;
+  position: relative;
+}
 
+.gallery {
+  max-width: 100%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.img-w {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  margin: 10px;
+  cursor: pointer;
+  overflow: hidden;
+  transition: transform ease-in-out 300ms;
+}
+
+.img-w img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.img-w:hover {
+  transform: scale(1.08);
+}
+
+.img-c {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: none;
+}
+
+.img-c.active {
+  display: block;
+  z-index: 2;
+}
+
+.img-c.postactive {
+  pointer-events: none;
+  z-index: 1;
+}
+
+.img-c.active.positioned {
+  transition-delay: 50ms;
+}
+
+
+.zoom-container {
+    position: fixed;
+    top: 0 ;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: none;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .zoom-container.active {
+    display: flex;
+  }
+
+  .zoomed-image {
+   
+    max-width: 70%;
+    max-height: 70%;
+    padding-top: 4%
+  }
+
+  .close-button {
+    background-color: transparent;
+    border: none;
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+    margin-top: 10px;
+  }
 
 .video-wrapper {
     display: flex;
@@ -137,6 +225,7 @@ html{
     height: auto;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
     overflow: hidden;
+    text-align: center;
 }
 
 #player {
@@ -351,6 +440,8 @@ html{
     max-width: 40rem;
     color: var(--Grayish-Blue);
     padding-bottom: 4rem;
+    text-align: justify; /* Justificar el texto */
+
 }
 
 .home .content .home-btn{
@@ -376,6 +467,64 @@ html{
 /* home section ends */
 
 
+
+
+/* galerias section starts  */
+
+.galerias .row{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 5rem;
+    margin: 3rem 0;
+}
+
+.galerias .row .image{
+    flex: 1 1 45rem;
+}
+
+
+.galerias .row .image img{
+    width: 100%;
+}
+
+
+
+.galerias .row .content{
+    flex: 1 1 45rem;
+}
+
+
+.galerias .row .content h1{
+    font-size: 4rem;
+    padding: 1rem 0;
+    color: var(--Very-Dark-Blue);
+}
+
+
+.galerias .row .content p{
+    font-size: 1.7rem;
+    padding: 1rem 0;
+    color: var(--Grayish-Blue);
+    padding-bottom: 4rem;
+    text-align: justify; /* Justificar el texto */
+
+}
+
+@media (max-width: 791px){
+  
+
+    .galerias{
+        overflow-x: hidden
+       
+    }
+
+    .faq{
+        overflow-x: hidden
+       
+    }
+    
+}
 
 /* features section starts  */
 
@@ -415,6 +564,8 @@ html{
     padding: 1rem 0;
     color: var(--Grayish-Blue);
     padding-bottom: 4rem;
+    text-align: justify; /* Justificar el texto */
+
 }
 /* features section ends */
 
