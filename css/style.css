@@ -611,6 +611,18 @@ body {
 
 
 
+.precio {
+    font-size: 24px;
+    color: black;
+   
+  }
+
+  .precio.anterior {
+    text-decoration: line-through;
+    color: red;
+ 
+  }
+
 /* footer section starts */
 .footer .box-container{
     display: grid;
