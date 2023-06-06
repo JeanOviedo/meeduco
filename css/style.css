@@ -346,13 +346,19 @@ body {
 
 
 
-@media (max-width: 991px){
+@media (max-width: 601px){
     html{
         font-size: 55%;
        
     }
     .header{
         padding: 2rem;
+    }
+
+    .countdown {
+       
+        font-size: 12px;
+     
     }
     
 }
